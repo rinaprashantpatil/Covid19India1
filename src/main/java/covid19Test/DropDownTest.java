@@ -2,6 +2,7 @@
 package covid19Test;
 
 import com.sun.xml.internal.bind.v2.runtime.output.StAXExStreamWriterOutput;
+import org.junit.Assert;
 import org.junit.Test;
 import org.junit.Before;
 import org.junit.After;
@@ -62,6 +63,7 @@ public class DropDownTest {
       }
     } catch (NoSuchElementException e) {
       System.out.println("Handled NoSuchElementException ");
+      Assert.fail("Drop Down test Failed");
     }
   }
   @Test
